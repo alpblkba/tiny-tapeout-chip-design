@@ -1,19 +1,17 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     455300931094822913     # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Tiny Tapeout Accumulator"      # Project title
-  author:       "Alp Bolukbasi"      # Your name
-  discord:      "karlsruhenoob"     # Your Discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A minimal event accumulator accelerator in Wokwi that monitors input pulses and outputs a compact activity vector."      # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     1000000       # Clock frequency in Hz (1 MHz)
+  wokwi_id: 455300931094822913
+  title: "Tiny Tapeout Accumulator"
+  author: "Alp Bolukbasi"
+  discord: "karlsruhenoob"
+  description: "A simple event accumulator that counts input pulses and outputs a 4-bit activity value."
+  language: "Wokwi"
+  clock_hz: 1000000
 
-  # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  # How many tiles your design occupies
+  tiles: "1x1"
 
-
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
-# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+# Pin descriptions — leave unused pins blank
 pinout:
   # Inputs
   ui[0]: "clk"
@@ -26,16 +24,16 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "out[0]"
-  uo[1]: "out[1]"
-  uo[2]: "out[2]"
-  uo[3]: "out[3]"
+  uo[0]: "out0"
+  uo[1]: "out1"
+  uo[2]: "out2"
+  uo[3]: "out3"
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
   uo[7]: ""
 
-  # Bidirectional pins
+  # Bidirectional pins (unused)
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
